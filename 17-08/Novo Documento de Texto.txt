@@ -1,0 +1,51 @@
+variavel de ambiente
+
+composer - gerenciador de dependencias
+empresa/nomedo projeto
+instala as bibliotecas e todas as dependencias
+
+localhost (ip maq) e porta...
+
+Opção por docker ou artisan (artesão, faz tudo)
+
+laravel 
+
+rotas -> endereço ('/') usa barra
+
+-> recebe algum método
+-> regra de negocio - quando se precisa busca alguma informação
+-> model acessa o banco e devolve para a controller
+-> validar algo entra na controller
+-> view só mostrar na tela
+-> 
+-> rota -> artisan -> mvc 
+se for view retorna algo da 'view'
+
+blade - gerenciador de templates / projetos - usar coisas no html sem precisar do PHP
+
+ str_replace('_', '-', app()->getLocale()) - substitui pela linguagem do projeto
+
+ as rotas acessam o mvc para mudar a página
+
+a linguagem é jogada para um robô que tenta entender se a linguagem do documento 
+bate com a linguagem do conteudo, 
+caso contrário pode perder a relevencia
+
+laravel comunicar com a controller que comunica com a view
+
+php artisan make:controller (cria uma controler)
+
+controler - regra de negócio
+
+abre a controller e executa algo
+
+a rota se comunica com algo da mvc para mostrar
+
+colocar o caminhouse ...
+
+classe não existe provável erro no use.
+
+rotas -> caminhos
+
+git clone -> composer install p/ instalar as bibliotecas
+arv de ambiente -> criar um arv. .env
