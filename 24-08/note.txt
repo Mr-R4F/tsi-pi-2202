@@ -1,0 +1,96 @@
+rota é mandado direto p/ a view
+busca a info e devolve p/ a view
+mgirations p/ dar uma maior flexibilidde entre bancos
+migrations códigos que serão alteradas dentro do banco
+.env - arq de ambiente
+
+criar o banco (update e delete)
+env. arquivo de ambiente
+
+biqper studio ferramenta que se conecta em todos os bancos de dados
+
+controllers -> regras de negócio controle de tudo
+
+o artisan cria o contoller e model, *migration
+
+ao criar models
+ao criar o controler em inglês ele automaticamente entender o plural, em portugues pode ser que não
+jeito mais simples
+php artisan make:model nome-da-model -cm cria uma model chamda tal com controller e mgiration
+
+1 model = 1 categoria
+ggrupo de model = várias categoria
+
+pela data de criação da migration, se duas pessoas criarem ao mesmo tempo, o primeiro vem prioridade
+
+down -> faz um rollback se precisar apagar a tabela
+up -> executa 
+schema - tabelas
+blueprint - como quer que cria?
+timestamps- val e hora q foi inserido
+
+rodar as migrations
+
+ETAPAS
+
+1 - criar a model (por o nome)(usar o -cm p/ criar controler e migration)
+2 - alterar a migration
+3 - rodar a migration
+4 - criar a função na controller
+5- cria a view
+7- altera a model
+
+a rodar o banco, ele roda algumas coisas do laravel
+
+update - ao atualizar
+create - data ao criar
+
+no banco...
+failed_jobs -> mostra todos os erros da aplicação
+migrations -> mostra os dados (guardas migrations já afetadas no banco)
+password_resets -> caso esqueça a senha e gera um token para editar
+personal-acess-token -> ao passar o usuario e passado um token para dizer que é (a própria pessoa) (tokens gerado)
+users -> (nome, ...)
+
+no beekeper
+crtl + n cria nova linha
+p/ listagem de objeto
+
+rotas -> controller -> views
+
+p/ mostrar view.pasta
+
+
+model ir p/ o banco e passar os dados p/ view
+
+herda - herda tudo da classe pai todas as funcionalidades
+
+rtoas passa para o controller que passa p/ view
+
+
+:: - tipo
+: - usa apenas no artisan
+p/ acessar um obj ->
+json usa .
+
+o laravel cria um esquece que alguem q n seja ele mesmo submeta o form (cross scripting) (@scrf) - o laravel 
+não deixar inserir no BD (se passou pela validação)
+
+
+p/ receber dados de formulário usar o requesst (tipo)
+
+dd (dump and die)- mostra na tela e acaba o projeto (faz dump e mostra o script na tela)
+
+p/ criar nomes das rotas após os ) -> name('nome'); (alias)
+
+atribuir nome nas propriedas preenchidas
+fillable -pode ser preenchido (diz o que pode ou n ser preenchido)
+só colocar como fillable coisas que o usuário pode preencher 
+colcoar na model
+
+controler -diz o que vai inserir no banco
+model -> 'conversa' com a migrations
+
+se o erro for null olha o 'name' do form
+
+investior em projetos solidos
