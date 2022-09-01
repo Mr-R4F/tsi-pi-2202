@@ -1,0 +1,48 @@
+.env -> não vai para o banco
+base 64 - chave de acesso
+
+em vez do barra pode usar o 'name' (todo lugar que aponte para o nome)
+
+php artisan make model category -cm (cria controller e model)
+
+colocar no ingles pois ele faz tbm em plural
+caso s/ banco
+
+php artisan migrate -> migra os dados para o banco
+rota que executa a create
+em vez das barras, pode usar o {} para mandar o endereço
+crsf - garante que o form na seja enviado sem vier da página do laravel.
+sem a chave não consegue fazer a encriptação
+
+
+faz comunicação da rota -> controller -> view
+				|
+				---> model
+
+na model precisa collcar quais campos o usuário pode preencher (fillable - campo preenchivel)('required')
+p/ editar _> abre um form e submimete para criar os dados
+
+passar qual item quer editar {item-para-edição}('id')
+
+criar view
+
+update
+
+post - usar para criar
+get -para abrir
+put - editar
+
+rota criar na controller se não precisar usar criar na view
+
+na edit trocar o método
+
+entretanto não existe o método put pois o laravel usar o https 1.0
+protocolo de comunicação criado para criar arquivos de textos entre os pcs
+
+na 1.0 não possui put/delete
+na 1.1 poussi vários
+
+deixar como post mais tratar no PHP
+-> acessa um atributo / propriedade de um objeto
+
+para delete precisa de um form (na v1 usar o post normal)
